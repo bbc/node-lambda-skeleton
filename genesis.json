@@ -1,0 +1,14 @@
+{
+  "ci": {
+    "jenkinsDomain": "cps-jenkins-master.cloud.bbc.co.uk",
+    "jenkinsFile": "./ci/Jenkinsfile-build.groovy",
+    "jenkinsFileDefaultBranch": "master"
+  },
+  "cosmosConfig": [
+    {
+      "value": "int",
+      "secure": false,
+      "key": "ENVIRONMENT"
+    }
+  ]
+}

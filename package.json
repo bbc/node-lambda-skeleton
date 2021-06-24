@@ -1,0 +1,31 @@
+{
+  "name": "genesis-skeleton",
+  "version": "1.0.0",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "jest --watch --detectOpenHandles",
+    "test:ci": "yarn run lint && jest --coverage",
+    "lint": "eslint './**/*.js'"
+  },
+  "repository": "git+https://github.com/bbc/genesis-skeleton.git",
+  "dependencies": {
+    "@bbc/node-dpub-cloudwatch": "^1.1.0"
+  },
+  "devDependencies": {
+    "eslint": "^7.14.0",
+    "eslint-config-airbnb-base": "^14.2.0",
+    "eslint-plugin-import": "^2.22.0",
+    "eslint-plugin-jest": "^24.0.1",
+    "jest": "^26.6.3"
+  },
+  "jest": {
+    "coverageThreshold": {
+      "global": {
+        "branches": 100,
+        "functions": 100,
+        "lines": 100,
+        "statements": 100
+      }
+    }
+  }
+}
